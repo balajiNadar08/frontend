@@ -32,7 +32,8 @@ const TRANSLATIONS = {
     'Generate FHIR Bundle': 'Generate FHIR Bundle',
     'Previous': 'Previous',
     'Next': 'Next',
-    
+    'Analytics': 'Analytics',
+
     // Placeholders
     'Enter patient\'s full name': 'Enter patient\'s full name',
     'Enter phone number': 'Enter phone number',
@@ -56,6 +57,7 @@ const TRANSLATIONS = {
     'Login': 'लॉगिन',
     'Export Data': 'डेटा निर्यात करें',
     'Translate': 'अनुवाद',
+    'Analytics': 'विश्लेषण',
     
     // Form Labels (Hindi)
     'Patient Information': 'रोगी की जानकारी',
@@ -101,6 +103,7 @@ const TRANSLATIONS = {
     'Login': 'लॉगिन',
     'Export Data': 'डेटा निर्यात करा',
     'Translate': 'भाषांतर करा',
+    'Analytics': 'विश्लेषण',
     
     // Form Labels (Marathi)
     'Patient Information': 'रुग्णाची माहिती',
