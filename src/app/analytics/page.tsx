@@ -1,9 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "../../../context/Navbar";
 import Link from "next/link";
-import { usePreTranslation } from "../../../context/PreTranslatedContext";
 
 // Dummy Analytics Data
 const analyticsData = {
@@ -66,7 +64,6 @@ const analyticsData = {
 };
 
 export default function AnalyticsPage() {
-  const { t } = usePreTranslation();
   const [timeRange, setTimeRange] = useState("30days");
 
   return (
