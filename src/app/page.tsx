@@ -298,10 +298,10 @@ export default function HomePage() {
       <div className="container mx-auto px-4 py-8 max-w-4xl">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-800 mb-2">
-            {t('NavaSetu')}
+            {t("NavaSetu")}
           </h1>
           <p className="text-gray-600 text-lg">
-            {t('Bridging Traditional Medicine with Modern Standards')}
+            {t("Bridging Traditional Medicine with Modern Standards")}
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-green-500 mx-auto mt-4"></div>
         </div>
@@ -321,22 +321,22 @@ export default function HomePage() {
                 d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
               />
             </svg>
-            {t('Patient Information')}
+            {t("Patient Information")}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-4">
               <h3 className="text-lg font-medium text-gray-700 border-b pb-2">
-                {t('Basic Details')}
+                {t("Basic Details")}
               </h3>
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Full Name')} <span className="text-red-500">*</span>
+                  {t("Full Name")} <span className="text-red-500">*</span>
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Enter patient\'s full name')}
+                  placeholder={t("Enter patient's full name")}
                   value={patient.name}
                   onChange={(e) =>
                     setPatient({ ...patient, name: e.target.value })
@@ -346,7 +346,7 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Date of Birth')} <span className="text-red-500">*</span>
+                  {t("Date of Birth")} <span className="text-red-500">*</span>
                 </label>
                 <input
                   type="date"
@@ -360,7 +360,7 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Gender')} <span className="text-red-500">*</span>
+                  {t("Gender")} <span className="text-red-500">*</span>
                 </label>
                 <select
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
@@ -378,11 +378,11 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Phone Number')}
+                  {t("Phone Number")}
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Enter phone number')}
+                  placeholder={t("Enter phone number")}
                   value={patient.phone}
                   onChange={(e) =>
                     setPatient({ ...patient, phone: e.target.value })
@@ -392,12 +392,12 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Email Address')}
+                  {t("Email Address")}
                 </label>
                 <input
                   type="email"
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Enter email address')}
+                  placeholder={t("Enter email address")}
                   value={patient.email}
                   onChange={(e) =>
                     setPatient({ ...patient, email: e.target.value })
@@ -413,11 +413,11 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('')}Address
+                  {t("")}Address
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 mb-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Street address')}
+                  placeholder={t("Street address")}
                   value={patient.address.line}
                   onChange={(e) =>
                     setPatient({
@@ -429,7 +429,7 @@ export default function HomePage() {
                 <div className="grid grid-cols-2 gap-2">
                   <input
                     className="border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder={t('City')}
+                    placeholder={t("City")}
                     value={patient.address.city}
                     onChange={(e) =>
                       setPatient({
@@ -440,7 +440,7 @@ export default function HomePage() {
                   />
                   <input
                     className="border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder={t('State')}
+                    placeholder={t("State")}
                     value={patient.address.state}
                     onChange={(e) =>
                       setPatient({
@@ -454,11 +454,11 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Emergency Contact')}
+                  {t("Emergency Contact")}
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 mb-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Emergency contact name')}
+                  placeholder={t("Emergency contact name")}
                   value={patient.emergencyContact.name}
                   onChange={(e) =>
                     setPatient({
@@ -487,7 +487,7 @@ export default function HomePage() {
                   />
                   <input
                     className="border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                    placeholder={t('Phone')}
+                    placeholder={t("Phone")}
                     value={patient.emergencyContact.phone}
                     onChange={(e) =>
                       setPatient({
@@ -504,7 +504,7 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Medical History')}
+                  {t("Medical History")}
                 </label>
                 <textarea
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
@@ -519,7 +519,7 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Known Allergies')}
+                  {t("Known Allergies")}
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
@@ -533,11 +533,11 @@ export default function HomePage() {
 
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
-                  {t('Current Medications')}
+                  {t("Current Medications")}
                 </label>
                 <input
                   className="w-full border border-gray-300 text-black rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                  placeholder={t('Current medications')}
+                  placeholder={t("Current medications")}
                   value={patient.currentMedications}
                   onChange={(e) =>
                     setPatient({
@@ -574,7 +574,7 @@ export default function HomePage() {
               </label>
               <input
                 className="w-full border text-black border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                placeholder={t('Type to search AYUSH diseases...')}
+                placeholder={t("Type to search AYUSH diseases...")}
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
@@ -608,63 +608,78 @@ export default function HomePage() {
             </div>
 
             {selectedDisease && (
-  <div className="mt-4 p-4 border border-green-200 rounded-lg bg-green-50">
-    <div className="flex items-center mb-2">
-      <svg
-        className="w-5 h-5 text-green-600 mr-2"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 13l4 4L19 7"
-        />
-      </svg>
-      <h4 className="font-semibold text-green-800">Selected Disease</h4>
-    </div>
-    <div className="grid md:grid-cols-2 gap-4">
-      <div>
-        <p className="text-sm text-gray-600">Disease Name</p>
-        <p className="font-medium text-black">{selectedDisease.name}</p>
-      </div>
-      <div>
-        <p className="text-sm text-gray-600">Namaste Code</p>
-        <p className="font-mono text-blue-600">{selectedDisease.namaste}</p>
-      </div>
-      <div>
-        <p className="text-sm text-gray-600">ICD-11-Biomedicine Code</p>
-        <p className="font-mono text-blue-600">
-          {selectedDisease.icdBiomedicine}
-        </p>
-      </div>
-      <div>
-        <p className="text-sm text-gray-600">ICD-11-TM2 Code</p>
-        <p className="font-mono text-green-600">{selectedDisease.icdTM2}</p>
-      </div>
+              <div className="mt-4 p-4 border border-green-200 rounded-lg bg-green-50">
+                <div className="flex items-center mb-2">
+                  <svg
+                    className="w-5 h-5 text-green-600 mr-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+                  <h4 className="font-semibold text-green-800">
+                    Selected Disease
+                  </h4>
+                </div>
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <p className="text-sm text-gray-600">Disease Name</p>
+                    <p className="font-medium text-black">
+                      {selectedDisease.name}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-600">Namaste Code</p>
+                    <p className="font-mono text-blue-600">
+                      {selectedDisease.namaste}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-600">
+                      ICD-11-Biomedicine Code
+                    </p>
+                    <p className="font-mono text-blue-600">
+                      {selectedDisease.icdBiomedicine}
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-gray-600">ICD-11-TM2 Code</p>
+                    <p className="font-mono text-green-600">
+                      {selectedDisease.icdTM2}
+                    </p>
+                  </div>
 
-      {/* NEW SNOMED */}
-      <div>
-        <p className="text-sm text-gray-600">SNOMED Code</p>
-        <p className="font-mono text-purple-600">{selectedDisease.snomed}</p>
-      </div>
+                  {/* NEW SNOMED */}
+                  <div>
+                    <p className="text-sm text-gray-600">SNOMED Code</p>
+                    <p className="font-mono text-purple-600">
+                      {selectedDisease.snomed}
+                    </p>
+                  </div>
 
-      {/* NEW LOINC */}
-      <div>
-        <p className="text-sm text-gray-600">LOINC Code</p>
-        <p className="font-mono text-pink-600">{selectedDisease.loinc}</p>
-      </div>
+                  {/* NEW LOINC */}
+                  <div>
+                    <p className="text-sm text-gray-600">LOINC Code</p>
+                    <p className="font-mono text-pink-600">
+                      {selectedDisease.loinc}
+                    </p>
+                  </div>
 
-      <div className="md:col-span-2">
-        <p className="text-sm text-gray-600">Description</p>
-        <p className="text-gray-800">{selectedDisease.description}</p>
-      </div>
-    </div>
-  </div>
-)}
-
+                  <div className="md:col-span-2">
+                    <p className="text-sm text-gray-600">Description</p>
+                    <p className="text-gray-800">
+                      {selectedDisease.description}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           <div className="mt-8 flex justify-center">
